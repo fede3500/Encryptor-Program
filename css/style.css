@@ -234,11 +234,11 @@ footer {
 }
 #copy{
   width: 60%;
+  margin: auto;
   padding: 2%;
 }
 .textarea_result{
-  margin: auto;
-  padding: initial;
+  height: 20em;
 }
 }
 
