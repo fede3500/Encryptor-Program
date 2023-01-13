@@ -238,7 +238,8 @@ footer {
   padding: 2%;
 }
 .textarea_result{
-  height: 20em;
+  height: 18em;
+  padding: initial;
 }
 }
 
