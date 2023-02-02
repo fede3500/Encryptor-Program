@@ -121,7 +121,7 @@ function imprimirEnElDom(mensaje) {
   outputResponse.innerHTML = `
       <div class="results">
         <div class="text-result"><textarea class="textarea_result" readonly> ${mensaje}</textarea></div>
-        <button id="copy">Copiar</button>
+        <button id="copy">Copy</button>
       </div>`;
 }
 

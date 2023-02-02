@@ -14,14 +14,16 @@ body {
 }
 
 header {
-  padding: 1%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   color: white;
-  font-size: 20px;
   width: 100%;
 }
 
-h1{
+h1 {
   width: 100%;
   text-align: center;
 }
@@ -202,46 +204,81 @@ footer {
 /* Responsive Media Queries*/
 
 /* For mobile phones: */
-@media  screen and (max-width: 800px) {
- .container {
-  width: 100%;
-  height: 100%;
- }
- .section-right{
-  width: 70%;
-  height: 45%;
-  margin: 2%;
-  float: left;
-}
-.section-img{
-  width: 30%;
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .section-right {
+    width: 70%;
+    height: 45%;
+    margin: 2%;
+    float: left;
+  }
+  .section-img {
+    width: 30%;
+  }
+
+  .section-left {
+    width: 70%;
+  }
+  .info,
+  .textarea_1 {
+    width: 100%;
+  }
+  .buttons {
+    width: 100%;
+    margin: 1%;
+  }
+  .button-copy {
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+  }
+  #copy {
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+  }
+  .textarea_result {
+    height: 18em;
+  }
 }
 
-.section-left{
-  width:70%;
+/* For Notebooks */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+    height: 40%;
+  }
+  .section-right {
+    height: 100%;
+  }
+  .section-img {
+    width: 50%;
+  }
+  h2,
+  p {
+    font-size: 15px;
+  }
+  .button-copy,
+  #copy {
+    margin: 0 auto;
+    padding: 5px;
+  }
+  .textarea_result {
+    width: 90%;
+    height: 220px;
+  }
+  footer {
+    padding: 0;
+  }
+  .animation-tittle {
+    padding: 8px 16px;
+  }
+  .logo-img{
+    width: 7%;
+    margin-top: 1%;
+  }
+  textarea::placeholder {font-family: Arial; color: #333;}
 }
-.info, .textarea_1{
-  width: 100%;
-}
-.buttons{
-  width: 100%;
-  margin: 1%;
-}
-.button-copy{
-  width: 60%;
-  margin: auto;
-  padding: 2%;
-}
-#copy{
-  width: 60%;
-  margin: auto;
-  padding: 2%;
-}
-.textarea_result{
-  height: 18em;
-  
-}
-}
-
-/* For tablets: */
-
